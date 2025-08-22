@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         //Task 1
+        System.out.println("Task 1");
         int [] numbers = new int[3];
         numbers[0] = 1;
         numbers[1] = 2;
@@ -12,8 +13,14 @@ public class Main {
         populationOfVillages[0] = 25_189;
         populationOfVillages[1] = 27_520;
         populationOfVillages[2] = 29_725;
+        System.out.println("Целочисленный массив:");
+        System.out.println(Arrays.toString(numbers));
+        System.out.println("Массив с дробными числами:");
+        System.out.println(Arrays.toString(fractionalNumbers));
+        System.out.println("Произвольный массив:");
+        System.out.println(Arrays.toString(populationOfVillages));
         //Task 2
-        System.out.println("Task 1 and 2");
+        System.out.println("Task 2");
         System.out.println("Целочисленный массив:");
         for (int i = 0; i < numbers.length; i++) {
             if (i > 0) {
