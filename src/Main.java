@@ -36,8 +36,14 @@ public class Main {
         //Task 4
         System.out.println("Task 4");
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = reverseFullName.length-1; i >= 0; i--) {
-                System.out.print(reverseFullName[i]);
+        char oneLetter = 'a';
+        for (int i = 0; i < reverseFullName.length/2; i++) {
+            oneLetter = reverseFullName[i];
+            reverseFullName[i] = reverseFullName[(reverseFullName.length - 1) - i];
+            reverseFullName[(reverseFullName.length - 1) - i] = oneLetter;
+        }
+        for (char current : reverseFullName) {
+            System.out.print(current);
         }
     }
 }
